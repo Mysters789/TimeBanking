@@ -1,0 +1,357 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    /*width: 150px;*/
+}
+
+#managePosts table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+#managePosts tr:nth-of-type(odd) { 
+    background: rgba(0,0,0,0.05); 
+}
+
+#managePosts th { 
+    padding: 8px;
+    text-align: left;
+    /*color: darkslategray;*/
+    background: #333; 
+    font-weight: bold; 
+}
+
+#managePosts td, th { 
+    padding: 6px;
+    /*border: 1px solid #606eb2;*/ 
+    text-align: left; 
+}
+
+.post {
+    text-align: center;
+    background: rgba(0,0,0,0.05); 
+}
+
+td, th { 
+    padding: 6px;
+    /*border: 1px solid #606eb2;*/ 
+    text-align: left; 
+}
+
+div {
+    /*overflow:auto;*/
+    margin:10px;
+}
+
+.leftNav {
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: 200px
+}
+
+.searchResults {
+    float: right;
+    position: relative;
+}
+
+label {
+    display:block;
+    font-weight: bold;
+    color: #060360
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#606eb2; 
+    border:0 none;
+    color: #fff;
+    cursor:pointer;
+    border-radius: 5px; 
+}
+
+.button {
+    background-color: #606eb2;
+    border: none;
+    color: #fff;
+    padding:5px 15px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input{
+    background-color: rgba(0,0,0,0.05);
+    display:inline-block;
+    padding:5px;
+    border-width:0px;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+.CookiePolicyWarning {
+    background: rgba(255,255,0,0.3);
+    font-weight: bold;
+}
+
+.theForm {
+    float: right;
+}
+
+body{
+    background: linear-gradient(274deg, #ffffff, #a8aafb);
+    background-size: 200% 200%;
+    animation: AnimationName 14s ease infinite;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+
+.search {
+    width: 100%;
+    position: relative
+}
+
+.red-star {
+    color: red;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #606eb2;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    color: #000000;
+}
+
+.searchButton {
+    position: absolute;  
+    right: -50px;
+    width: 40px;
+    height: 46px;
+    border: 1px solid #606eb2;
+    background: #606eb2;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchTerm:focus{
+    color: #606eb2;
+}
+
+.footer{ 
+    position: absolute;     
+    text-align: center;    
+    bottom: 0px; 
+    width: 100%;
+}  
+
+.manageFooter{ 
+    /*position: fixed;*/     
+    text-align: center;    
+    bottom: 0px; 
+    width: 100%;
+}  
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(274deg, #ffffff, #a8aafb);
+    background-size: 200% 200%;
+    animation: AnimationName 1s ease infinite;
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+
+@media only screen and (max-width: 786px) {
+
+    .leftNav {
+        z-index: 2;
+        width: 100%;
+        background-color: rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    .leftNav input[type=number]{
+        width: 90%;
+    }
+
+    .leftNav input[type=text]{
+        width: 90%;
+    }
+
+    .wrap {
+        width: 60%;
+        text-align: center;
+    }
+
+    table tr, td { 
+        width : 100%;
+    }
+
+    #results tr, td { 
+        text-align: center;
+        width : 100%;
+    }
+
+    #LogInTable thead, tbody, th, td, tr { 
+        display: block; 
+        /*float: right;*/
+        /*text-align: left;*/ 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #LogInTable thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #LogInTable tr { 
+        /*border: 1px transparent;*/
+    }
+
+    .searchButtonmini {
+        position: absolute;  
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #LogInTable td { 
+        /* Behave  like a "row" */
+        /*border: 1px solid;*/
+        width : 0%;
+        border-bottom: 1px transparent; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    #LogInTable td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+
+    #LogInTable td:nth-of-type(1):before { content: "Username"; }
+    #LogInTable td:nth-of-type(2):before { content: "Password"; }
+
+    #managePosts table, thead, tbody, th, td, tr { 
+        display: block; 
+        float: left;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #managePosts thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #managePosts tr { 
+        border: 1px transparent;
+    }
+
+    #managePosts td { 
+        /* Behave  like a "row" */
+        /*border: 1px solid;*/
+        width : 49%;
+        border-bottom: 1px transparent; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    #managePosts td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    #managePosts td:nth-of-type(1):before { content: "Status"; }
+    #managePosts td:nth-of-type(2):before { content: "Service Type"; }
+    #managePosts td:nth-of-type(3):before { content: "Skills Required"; }
+    #managePosts td:nth-of-type(4):before { content: "Location"; }
+    #managePosts td:nth-of-type(5):before { content: "Reward on completion"; }
+    #managePosts td:nth-of-type(6):before { content: "Image(s)"; }
+    #managePosts td:nth-of-type(7):before { content: "Post Options"; }
+}
+
+.searchTermmini {
+    width: 96%;
+    border: 3px solid #606eb2;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    color: #000000;
+}
+
+.searchButtonmini {
+    position: absolute;  
+    right: 20px;
+    width: 40px;
+    height: 46px;
+    border: 1px solid #606eb2;
+    background: #606eb2;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.menu-con-logo {
+    float: top;
+    /*width: 50px;*/
+    /*height: 60px*/
+}
+
+.menu-ico-logo {
+    width: 45px;
+    height: 45px;
+    border-bottom: 2px solid transparent;
+    background: url(../favicon.png) no-repeat center;
+    background-size: 32px
+}
+
+.menu-ico-logo:hover {
+    height: 45px;
+    border-bottom: 2px solid #606eb2
+}
