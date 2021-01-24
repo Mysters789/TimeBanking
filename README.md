@@ -1,4 +1,5 @@
 # TimeBanking
-An implementation of a full website using PHP, SQL and Javascript.
 
-The website uses custom javascript and CSS to achieve a unique look!
+A PHP based website that is fully customized with hand written CSS. It is Time Banking and it implements Authentication, Image uploading, Search, Cookies.
+
+Date of Creation: 02/12/2018
